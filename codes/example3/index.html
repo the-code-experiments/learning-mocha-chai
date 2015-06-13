@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Mocha/Chai/Expect: Example 2
+        </title>
+        <link rel="stylesheet" href="../mocha.css" type="text/css">
+    </head>
+    <body>
+        <div id="mocha"></div>
+
+        <script src="../mocha.js"></script>
+        <script src="../chai.js"></script>
+
+        <script type="text/javascript">
+          mocha.setup('bdd');
+        </script>
+
+        <script src="fetchNames.js"></script>
+        <script src="fetchNames-tests.js"></script>
+
+        <script type="text/javascript">
+          mocha.run();
+        </script>
+        
+    </body>
+</html>
