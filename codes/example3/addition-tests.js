@@ -14,12 +14,23 @@ var assert = chai.assert;
  */
 suite('Addition of 2 numbers', function() {
 
-	test('Should return 4 when the parameter is 2 & 2', function() {
+    setup(function() {
+        console.log('Run setup: before each test');
+    });
+
+    teardown(function() {
+        console.log('Run teardown: before each test');
+    });
+
+    test('Should return 4 when the parameter is 2 & 2', function() {
         assert.equal(addition(2, 2), 4, 'Expecting the addition to be 4');
     });
 
-	test('Should return HelloWorld when the parameter is Hello & World', function() {
-        assert.equal(addition(2, 2), 4, 'Expecting the addition to be HelloWorld');
-    });
+    suite('Addition of 2 string', function() {
 
+        test('Should return HelloWorld when the parameter is Hello & World', function() {
+            assert.equal(addition('Hello', 'World'), 'HelloWorld', 'Expecting the addition to be HelloWorld');
+        });
+
+    });
 });

@@ -11,7 +11,7 @@ var expect = chai.expect;
 /**
  *  BDD Test cases for Addition module.
  */
-describe('Addition of 2 numbers', function() {
+describe('Addition', function() {
 
     it('Should return 4 when the parameter is 2 & 2', function() {
         expect(addition(2, 2)).to.equal(4);
