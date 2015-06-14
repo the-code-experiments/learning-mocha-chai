@@ -5,6 +5,7 @@
  *
  *  How to run this example.
  *  1. Open index.html in browser.
+ *  2. Press F12 to see the console.
  */
 
 /**

@@ -3,8 +3,7 @@
  */
 function addition(a, b) {
 	
-	console.log("a: ", a);
-	console.log("b: ", b);
+	console.log("Addition (Answer): ", a + b);
 
 	return a + b;
 }
