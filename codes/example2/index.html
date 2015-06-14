@@ -7,21 +7,32 @@
         <link rel="stylesheet" href="../mocha.css" type="text/css">
     </head>
     <body>
+        <body>
+
+        <!-- Mocha will be displaying test cases report -->
         <div id="mocha"></div>
 
+        <!-- Include mocha -->
         <script src="../mocha.js"></script>
+
+        <!-- Include chai -->
         <script src="../chai.js"></script>
 
+        <!-- Specify Mocha setup -->
         <script type="text/javascript">
           mocha.setup('bdd');
         </script>
 
+        <!-- Include test case files -->
         <script src="addition.js"></script>
         <script src="addition-tests.js"></script>
 
+        <!-- Run Mocha; once all tests are loaded from tests.js -->
         <script type="text/javascript">
           mocha.run();
         </script>
+        
+    </body>
         
     </body>
 </html>

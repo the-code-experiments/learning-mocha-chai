@@ -7,16 +7,25 @@
         <link rel="stylesheet" href="../mocha.css" type="text/css">
     </head>
     <body>
+
+        <!-- Mocha will be displaying test cases report -->
         <div id="mocha"></div>
 
+        <!-- Include mocha -->
         <script src="../mocha.js"></script>
+
+        <!-- Include chai -->
         <script src="../chai.js"></script>
 
+        <!-- Specify Mocha setup -->
         <script type="text/javascript">
           mocha.setup('bdd');
         </script>
-        <script src="tests.js" type="text/javascript"></script>
 
+        <!-- Include test cases file -->
+        <script src="tests.js"></script>
+
+        <!-- Run Mocha; once all tests are loaded from tests.js -->
         <script type="text/javascript">
           mocha.run();
         </script>
