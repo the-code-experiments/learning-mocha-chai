@@ -1,12 +1,22 @@
 /**
  *  The goal of this file is to provide the basic understanding:
- *  -> Mocha, Chai via Expect assert style;
+ *  -> Mocha, Chai via Expect assertion style;
  *  -> How to write BDD test cases;
  *
  *  How to run this example.
  *  1. Open index.html in browser.
  */
 
+/**
+ *  @Assert Syntax: Expect
+ *
+ * If you want to use `should`:
+ * var should = chai.should;
+ *
+ * If you want to use `assert`:
+ * var assert = chai.assert;
+ *
+ */
 var expect = chai.expect;
 
 /**
